@@ -1,0 +1,142 @@
+ <div class="container-fluid">
+
+                    
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Market</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Open (USD)</th>
+                                            <th>Close (USD)</th>
+                                            <th>Change %</th>
+                                           
+                                        </tr>
+                                    </thead>
+                             
+                                    <tbody>
+                                       <tr>
+                                            <td> Gold</td>
+                                            <td> {{open_gold}} </td>
+                                            <td> {{close_gold}}</td>
+                                            {% if  change_gold >= 0%}
+                                            <td style="color:#0DE810;" >{{change_gold}}</td>
+                                            {% else %}
+                                              <td style="color:red;" >{{change_gold}}</td>
+                                            {% endif %}
+                                          
+                                          
+                                         
+                                     
+                                        </tr>
+                                           <tr>
+                                            <td> Silver </td>
+                                            <td> {{open_silver}} </td>
+                                            <td> {{close_silver}}</td>
+                                            {% if  change_silver >= 0%}
+                                            <td style="color:#0DE810;" >{{change_silver}}</td>
+                                            {% else %}
+                                              <td style="color:red;" >{{change_silver}}</td>
+                                            {% endif %}
+                                          
+                                          
+                                         
+                                     
+                                        </tr>
+                                           <tr>
+                                            <td> Crude Oil </td>
+                                            <td> {{open_oil}} </td>
+                                            <td> {{close_oil}}</td>
+                                            {% if  change_oil >= 0%}
+                                            <td style="color:#0DE810;" >{{change_oil}}</td>
+                                            {% else %}
+                                              <td style="color:red;" >{{change_oil}}</td>
+                                            {% endif %}
+                                          
+                                                                                                                        
+                                       </tr>
+                                        <tr>
+                                            <td> Bitcoin </td>
+                                            <td> {{open_btc}} </td>
+                                            <td> {{close_btc}}</td>
+                                            {% if  change_btc >= 0%}
+                                            <td style="color:#0DE810;" >{{change_btc}}</td>
+                                            {% else %}
+                                            <td style="color:red;" >{{change_btc}}</td>
+                                            {% endif %}
+                                          
+                                          
+                                         
+                                     
+                                        </tr>
+                                        <tr>
+                                            <td> Ethereum </td>
+                                            <td> {{open_et}} </td>
+                                            <td> {{close_et}}</td>
+                                            
+                                            {% if  change_et >= 0%}
+                                            <td style="color:#0DE810;" >{{change_et}}</td>
+                                            {% else %}
+                                            <td style="color:red;" >{{change_et}}</td>
+                                            {% endif %}
+                                          
+                                                                             
+                                        </tr>
+                                      
+                                        <tr>
+                                            <td> XRP</td>
+                                            <td> {{open_xrp}} </td>
+                                            <td> {{close_xrp}}</td>
+                                            
+                                            {% if  change_xrp >= 0%}
+                                            <td style="color:#0DE810;" >{{change_xrp}}</td>
+                                            {% else %}
+                                            <td style="color:red;" >{{change_xrp}}</td>
+                                            {% endif %}
+                                          
+                                          
+                                                                   
+                                        </tr>
+                                        <tr>
+                                            <td> Chainlink </td>
+                                            <td> {{open_chain}} </td>
+                                            <td> {{close_chain}}</td>
+                                            
+                                            {% if  change_chain >= 0%}
+                                            <td style="color:#0DE810;" >{{change_chain}}</td>
+                                            {% else %}
+                                              <td style="color:red;" >{{change_chain}}</td>
+                                            {% endif %}
+                                          
+                                          
+                                         
+                                     
+                                        </tr>
+                                        <tr>
+                                            <td> Litecoin </td>
+                                            <td> {{open_lite}} </td>
+                                            <td> {{close_lite}}</td>
+                                            {% if  change_lite >= 0%}
+                                            <td style="color:#0DE810;" >{{change_lite}}</td>
+                                            {% else %}
+                                            <td style="color:red;" >{{change_lite}}</td>
+                                            {% endif %}
+                                          
+                                                                              
+                                        </tr>
+                            
+                                   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+         
+ </div>

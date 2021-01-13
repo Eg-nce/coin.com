@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% load plotly_dash %}
+    
+     {% include 'partials/card.html' %}
+    <div class="{% plotly_class name='Bitcoin' %} card" style="height: 100%; width: 100%">
+    {% plotly_app name='Bitcoin' ratio=0.45 %}
+    </div>
+<br>
+{% endblock %}

@@ -1,0 +1,57 @@
+<ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href= {% url 'main' %}>
+        <div class="sidebar-brand-icon rotate-n-15">
+        
+        </div>
+        
+         <div class="sidebar-brand-icon ">
+          <i class="fa fa-fw fa-chart-line" aria-hidden="true"></i>
+         </div>
+        <div class="sidebar-brand-text mx-3"> <strong> coin.com  </strong></div>
+      </a>
+
+    
+      <hr class="sidebar-divider my-0">
+
+   
+  
+      <hr class="sidebar-divider">
+
+  
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"  style =  'font-size:160% ' >
+         
+          <span style = "font-size:85%   ">Commodities</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+          
+            <a class="collapse-item" href= {% url 'gold' %} >Gold </a>
+            <a class="collapse-item" href= {% url 'silver' %} >Silver</a>
+            <a class="collapse-item" href= {% url 'oil' %} >Crude Oil</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities" style =  'font-size:160% '>
+        
+          <span style = "font-size:85%" >Cryptocurrencies</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+           
+            <a class="collapse-item" href= {% url 'Bitcoin' %}>Bitcoin</a>
+            <a class="collapse-item" href= {% url 'Ethereum' %} >Ethereum</a>
+            <a class="collapse-item" href= {% url 'XRP' %} >XRP</a>
+            <a class="collapse-item" href=  {% url 'chainlink' %}  >Chainlink</a>
+            <a class="collapse-item" href= {% url 'Litecoin' %} >Litecoin</a>
+          </div>
+        </div>
+      </li>
+
+ 
+
+    </ul>

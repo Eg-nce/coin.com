@@ -1,0 +1,115 @@
+
+<div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Earnings (Monthly) Card Example -->
+       
+
+            <!-- Earnings (Annual) Card Example -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-bottom-dark shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    Open</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"> {{opens}}</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-bottom-dark shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                   Close</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"> {{close}} </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tasks Card Example -->
+          {% if  opens < close %}
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-bottom-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                     Change </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"> {{derivative}} </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fa fa-percent  fa-2x text-gray-300" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% elif   opens > close %}
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-bottom-danger shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                   Change </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"> {{derivative}} </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fa fa-percent  fa-2x text-gray-300" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-bottom-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                   Change </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800"> {{derivative}} </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fa fa-percent  fa-2x text-gray-300" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endif %}
+           
+     
+        </div>
+
+    
+
+        
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script
+  
